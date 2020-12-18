@@ -1,5 +1,7 @@
 FROM jupyter/scipy-notebook
 
+LABEL maintainer="makoto.rodrigo@gmail.com"
+
 USER root
 
 # This is needed because requests-kerberos fails to install on debian due to missing linux headers
