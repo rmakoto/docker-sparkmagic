@@ -1,0 +1,9 @@
+version: '3'
+services:
+  sparkmagic:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - "./config.json:/home/jovyan/.sparkmagic/config.json:ro"
+      - "$HOME:/home/jovyan/work/"
